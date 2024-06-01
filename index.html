@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Greeting Card Generator</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Greeting Card Generator</h1>
+  </header>
+  <main>
+    <section>
+      <h2>Create Your Custom Greeting Card</h2>
+      <form id="card-form">
+        <div>
+          <label for="description">Description:</label>
+          <textarea id="description" name="description" required></textarea>
+        </div>
+        <div>
+          <label for="template">Template:</label>
+          <select id="template" name="template">
+            <option value="Birthday">Birthday</option>
+            <option value="Thank You">Thank You</option>
+            <option value="Holiday">Holiday</option>
+          </select>
+        </div>
+        <button type="submit">Generate Card</button>
+      </form>
+      <div id="card-result">
+        <h2>Your Generated Card</h2>
+        <img id="generated-card" src="" alt="Generated Greeting Card">
+      </div>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
